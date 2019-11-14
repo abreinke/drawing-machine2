@@ -11,32 +11,26 @@ line(mouseX, mouseY, pmouseX, pmouseY);
   }
 }
 
-function keyTyped(){
-  if (key === 'r'){
-  stroke(255, 64, 75);
-  }
-  else if(key === 'g') {
-  stroke(204, 255, 0);
-  }
-  return false;
-}
-
 function keyTyped() {
-  if (key === 'y') {
-  stroke(255, 245, 0);
-  }
-  else if (key === 'p') {
-  stroke(190, 128, 255);
+  if (key === 'r') {
+    stroke(255, 0, 51);
+  } else if (key === 'g') {
+    stroke(127, 255, 36);
   }
   return false;
 }
 
 function keyTyped(){
-if (key === 'b'){
-stroke(186, 228, 229);
+  if (key === 'y'){
+    stroke(255, 255, 0);
+  } else if (key === 'p') {
+    stroke(144, 97, 194);
   }
-  else if ( key === 'o') {
-  stroke(251, 184, 41);
+}
+function keyTyped(){
+  if (key === 'b'){
+    stroke(186, 228, 229);
+  } else if (key === 'o'){
+    stroke(255, 153, 0);
   }
-  return false;
 }

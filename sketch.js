@@ -5,32 +5,27 @@ strokeWeight(25);
 }
 
 function draw() {
-if (mouseIsPressed){
+if (mouseIsPressed) {
 line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);
 line(mouseX, mouseY, pmouseX, pmouseY);
-  }
-}
-
-function keyTyped() {
-  if (key === 'r') {
-    stroke(255, 0, 51);
-  } else if (key === 'g') {
-    stroke(127, 255, 36);
   }
   return false;
 }
 
-function keyTyped(){
-  if (key === 'y'){
+function keyPressed() {
+  if (keyCode === UP_ARROW) {
     stroke(255, 255, 0);
-  } else if (key === 'p') {
+  } else if (keyCode === DOWN_ARROW) {
+    stroke(0, 0, 0);
+  }
+  return false;
+}
+
+function keyPressed() {
+  if (keyCode === LEFT_ARROW) {
+    stroke(186, 228, 229);
+  } else if (keyPressed === RIGHT_ARROW) {
     stroke(144, 97, 194);
   }
-}
-function keyTyped(){
-  if (key === 'b'){
-    stroke(186, 228, 229);
-  } else if (key === 'o'){
-    stroke(255, 153, 0);
-  }
+  return false;
 }
